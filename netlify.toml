@@ -1,0 +1,10 @@
+[build]
+  base = "wedding-invitation-updated/wedding-invitation-source"
+  command = "npm install && npm run build"
+  publish = ".output/public"
+
+[build.environment]
+  NITRO_PRESET = "netlify"
+
+[functions]
+  directory = ".output/server"
